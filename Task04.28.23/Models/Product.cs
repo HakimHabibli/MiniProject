@@ -6,21 +6,13 @@ using System.Threading.Tasks;
 
 namespace Task04._28._23.Models
 {
-    internal class Product
+    public class Product:BaseEntity
     {
-        public Product()
+        public Product(string name) : base(name)
         {
-            _id++;
-            Id = _id;
-        }
-        public Product(string name):this()
-        {
-            
-            Name = name;
         }
 
-        static int _id { get; set; }
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public Product[] Amount { get; set; } = { };
+
     }
 }

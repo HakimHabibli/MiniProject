@@ -11,7 +11,7 @@ namespace Task04._28._23.Services.Interfaces.RestaurantInterface
     {
         public void Create(string name);
         public void Delete(string name);
-        public void Update(string name);
+        //public void Update(string name);
         public Restaurant GetById(int id);
     }
 }

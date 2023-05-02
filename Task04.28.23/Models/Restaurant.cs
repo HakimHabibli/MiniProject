@@ -6,21 +6,17 @@ using System.Threading.Tasks;
 
 namespace Task04._28._23.Models
 {
-    internal class Restaurant
+    public class Restaurant:BaseEntity
     {
-        
-        static int _id { get; set; }
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public Product[] Products { get; set; } = { };
+        public Restaurant(string name) : base(name)
+        {
+        }
+
         public Restaurant()
         {
-            _id++;
-            Id = _id;
         }
-        public Restaurant(string name):this() 
-        {
-            name = Name;
-        }
+
+        public List<Product> Products = new List<Product>() ;
+
     }
 }

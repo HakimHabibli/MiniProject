@@ -7,7 +7,7 @@ using Task04._28._23.Services.Interfaces.ProductInterface;
 
 namespace Task04._28._23.Services.Implementations.Product
 {
-    internal class ProductServices : IProductInterface
+    internal class ProductServices : IProductSevice
     {
         Models.Product[] products = new Models.Product[0]; 
         public void Create(string name)
@@ -26,9 +26,9 @@ namespace Task04._28._23.Services.Implementations.Product
             throw new NotImplementedException();
         }
 
-        public void Update(string name)
-        {
-            throw new NotImplementedException();
-        }
+        //public void Update(string name)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

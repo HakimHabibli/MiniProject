@@ -7,11 +7,11 @@ using Task04._28._23.Models;
 
 namespace Task04._28._23.Services.Interfaces.ProductInterface
 {
-    internal interface IProductInterface
+    internal interface IProductSevice
     {
         public void Create(string name);
         public void Delete(string name);
-        public void Update(string name);
+        //public void Update(string name);
         public Product GetById(int id);
     }
 }
